@@ -40,13 +40,6 @@ paths:
       summary: Crear un nuevo producto
       security:
         - jwt: []
-      parameters:
-        - in: header
-          name: Authorization
-          schema:
-            type: string
-          required: true
-          description: Token JWT
       requestBody:
         required: true
         content:
@@ -98,12 +91,6 @@ paths:
             type: string
           required: true
           description: ID del producto
-        - in: header
-          name: Authorization
-          schema:
-            type: string
-          required: true
-          description: Token JWT
       requestBody:
         required: true
         content:
@@ -130,12 +117,6 @@ paths:
             type: string
           required: true
           description: ID del producto
-        - in: header
-          name: Authorization
-          schema:
-            type: string
-          required: true
-          description: Token JWT
       responses:
         "200":
           description: Producto eliminado
