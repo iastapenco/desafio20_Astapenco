@@ -2,7 +2,8 @@ paths:
   /api/carts/{cid}/products/{pid}:
     post:
       summary: Agregar un producto al carrito
-      tags: Carts
+      tags:
+        - Carts
       security:
         - jwt: []
       parameters:
